@@ -175,7 +175,7 @@ class App extends Component {
                 onBlur={this.touchHeadingFunc}
               />
             ) : (
-              <h1 onBlur={this.touchHeadingFunc}>{activeHeading}</h1>
+              <h1 onBlur={this.touchHeadingFunc()}>{activeHeading}</h1>
             )}
             {isDescriptionTouched ? (
               <input
@@ -185,7 +185,7 @@ class App extends Component {
                 onBlur={this.touchDescriptionFunc}
               />
             ) : (
-              <p onBlur={this.touchDescriptionFunc}>{activeDescription}</p>
+              <p onBlur={this.touchDescriptionFunc()}>{activeDescription}</p>
             )}
           </div>
         </div>
